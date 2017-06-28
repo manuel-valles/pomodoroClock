@@ -1,0 +1,97 @@
+html{
+	height: 100%;
+}
+body{
+	background: url(background.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.container{
+	width: 80%;
+	padding: 20px;
+	margin:5% auto;
+	color: white;
+	background: rgba(0,0,0,.8);
+	border-radius: 15px;
+}
+ 
+@media only screen and (min-width : 768px){
+	.container{
+		width: 60%;
+	}
+
+}
+
+@media only screen and (min-width : 1200px){
+
+ 	.container{
+		width: 30%;
+	}
+}
+
+
+h1{
+	margin: 0;
+}
+h2, h3{
+	/*Align elements*/
+	display: inline;
+	margin: 0;
+}
+#header{
+	color: #ea4335;
+	margin: 25px auto;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+}
+.col{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 120px;
+}
+.btn{
+	font-size: 25px;
+	text-decoration: none !important;
+	outline: none !important;
+}
+#reset, #startAgain{
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: #4285f4;
+}
+#reset:hover{
+	color: #1c58bd;
+}
+#start{
+	font-size: 30px;
+	margin-bottom: 30px;
+	color: #fbbc05;
+}
+#start:hover{
+	color: #ce9901;
+}
+span{
+	display: block;
+	font-size: 15px;
+}
+#session, #countDown1{
+	font-size: 30px;
+	color: #34a954;
+	margin-bottom: 10px;
+}
+#break, #countDown2{
+	font-size: 30px;
+	color: #ea4335;
+	margin-bottom: 10px;
+}
+#pause{
+	display: none;
+	color: #fbbc05;
+}
+
+#pause:hover{
+	color: #ce9901;
+}

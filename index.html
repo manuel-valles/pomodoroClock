@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Pomodoro | Clock</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+	<div class="container text-center">
+		<h1 id="header">Pomodoro Clock</h1>
+		<div class="row">
+			<h4 id="title" class="col">Session Time</h4>
+			<h4 id="title" class="col">Break Time</h4>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<button class="btn btn-link" id="deductFive">-</button>
+				<h2 id="timeNum">25</h2>
+				<button class="btn btn-link" id="addFive">+</button>
+			</div>
+			<div class="col">
+				<button class="btn btn-link" id="deductFiveBreak">-</button>
+				<h2 id="breakNum">5</h2>
+				<button class="btn btn-link" id="addFiveBreak">+</button>
+			</div>	
+		</div>
+		<div class="row">
+			<button class="btn btn-link" id="start">Start<span>Your Pomodoro</span></button>
+		</div>
+		<div class="row">
+			<button class="btn btn-link" id="pause">Pause/Play<span>Your Pomodoro</span></button>
+		</div>
+		<div class="row">
+			<h1 id="session" class="col">Session</h1>
+			<h1 id="break" class="col">Break</h1>
+		</div>
+		<div class="row">
+			<h1 id="countDown1" class="col">25:00</h1>
+			<h1 id="countDown2" class="col">05:00</h1>
+		</div>
+	</div>
+	<!-- JQuery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<!-- JS -->
+	<script src="main.js"></script>
+</body>
+</html>
